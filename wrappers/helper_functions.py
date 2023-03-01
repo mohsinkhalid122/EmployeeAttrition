@@ -218,6 +218,5 @@ def Decile_Analysis(df,Trained_model):
                   }
     analysis = pd.DataFrame(Decile_analysis) 
     analysis=analysis.reset_index(drop =True)
-    analysis.to_csv('Decile_Analysis_50_50_pop.csv',index=False)
 
     return(analysis)
