@@ -29,7 +29,7 @@ employee_data['Attrition'] = employee_data['Attrition'].replace({'Yes': 1, 'No':
 #one-hot encode BusinessTravel, Department, MaritalStatus
 employee_data = pd.get_dummies(employee_data, columns=['BusinessTravel','Department','MaritalStatus'])
 
-#drop excess varibels for dimensionality reduction
+#drop excess variables for dimensionality reduction
 employee_data.drop(['BusinessTravel_Non-Travel','Department_Human Resources','MaritalStatus_Divorced'],axis=1,inplace=True)
 
 #drop uniformily distributed variables
